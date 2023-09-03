@@ -1,7 +1,8 @@
-[[redirects]]:
+[[redirects]]
   from="/account/login"
   to="/"
 
-[[redirects]]:
-  from="/"
-  to="/account/login"
+[[redirects]]
+  from="/account/login"
+  to="/"
+

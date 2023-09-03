@@ -88,6 +88,7 @@ watch(menuValue, async (newValue) => {
 			break;
 	}
 });
+console.log(toRaw(data.value.data))
 watch(searchTerm, async (newValue) => {
 	const { data: newTodos } = await useAsyncData(() =>
 		supabase
@@ -112,6 +113,7 @@ watch(searchTerm, async (newValue) => {
 
 		return;
 	}
+	
 	noResults.value = false;
 	data.value = newTodos.value;
 });
@@ -176,7 +178,8 @@ watch(searchTerm, async (newValue) => {
 			</button>
 		</form>
 		<h3 class="error-text" v-if="noResults">no matching results</h3>
-		<ul>
+		<h3 v-if="!data.data.length">no todos yet! pls add some</h3>
+		<ul v-else>
 			<li v-for="todo in data.data">
 				<TodoListItem
 					:title="todo.title"
@@ -189,7 +192,7 @@ watch(searchTerm, async (newValue) => {
 				/>
 			</li>
 		</ul>
-
+										
 		<!-- <button class="show-button" type="button" @click="toggleTodos">
 			{{ iscompletedList ? "Show All" : "Show Completed Task Only" }}
 		</button> -->
@@ -200,6 +203,9 @@ watch(searchTerm, async (newValue) => {
 </template>
 
 <style scoped>
+h3{
+	font-weight: 600;
+}
 button[disabled] {
 	background-color: rgba(66, 88, 212, 0.603);
 	cursor: not-allowed;

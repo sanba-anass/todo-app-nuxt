@@ -66,6 +66,9 @@
       "#build": [
         "."
       ],
+      "#build/*": [
+        "./*"
+      ],
       "#components": [
         "./components"
       ]

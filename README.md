@@ -1,4 +1,4 @@
-[Demo](https://todo-app-nuxt-eight.vercel.app)
+[Demo](https://todo-op.vercel.app)
 
 # Nuxt 3 Minimal Starter
 

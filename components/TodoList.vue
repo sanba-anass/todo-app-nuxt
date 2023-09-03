@@ -31,25 +31,6 @@ watch(descriptionText, (newValue) => {
 });
 // pending state + delete source
 const addTodo = async () => {
-	// if (!todoText.value) {
-	// 	alert("input value is empty");
-	// 	return;
-	// }
-	// if (todoText.value.length < 6) {
-	// 	alert("please enter a descriptive todo");
-	// 	return;
-	// }
-	// if (descriptionText.value.length < 15) {
-	// 	alert("please enter a long description");
-	// 	return;
-	// }
-	// const duplicatedItem = todoList.value.find(
-	// 	(item) => item.title === todoText.value
-	// );
-	// console.log(duplicatedItem);
-	// if (duplicatedItem) {
-	// 	return;
-	// }
 	const todoItem = {
 		title: todoText.value,
 		description: descriptionText.value,

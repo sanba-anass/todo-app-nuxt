@@ -44,18 +44,6 @@ const _inlineRuntimeConfig = {
     "routeRules": {
       "/__nuxt_error": {
         "cache": false
-      },
-      "/": {
-        "redirect": {
-          "to": "/account/login",
-          "statusCode": 307
-        }
-      },
-      "/account/login": {
-        "redirect": {
-          "to": "/",
-          "statusCode": 307
-        }
       }
     }
   },

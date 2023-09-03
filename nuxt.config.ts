@@ -7,10 +7,6 @@ export default defineNuxtConfig({
 		"@nuxtjs/supabase",
 		// ...
 	],
-	routeRules: {
-		"/": { redirect: "/account/login" }, // uses status code 307 (Temporary Redirect)
-		"/account/login": { redirect: "/" },
-	},
 	supabase: {
 		redirect: false,
 	},

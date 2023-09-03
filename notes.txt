@@ -1,0 +1,12 @@
+
+    
+
+
+- realtime form validation
+---------------------
+- watch videos about supabase auth 
+- todo-app-sanba
+- service_role sercet = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ5b2d1eGlnenBweGRmZXpycWh2Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5MzIyNzU4NSwiZXhwIjoyMDA4ODAzNTg1fQ.NnQtRtqfwuVigpZEhFWzbCnWKNS23EwAOwvqVAbnpTo
+
+jwt key = 7l8T0zw8XYLMvowAzQzJjBGRMLvWWv+VG0m+NBOIwVHi27JZ2JtXtblLJRvNpDwbQRRNs6fcTS6MtLjNjpT82A==
+

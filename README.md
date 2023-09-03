@@ -1,4 +1,8 @@
 [Demo](https://todo-op.vercel.app)
+test account:
+
+email:user666@gmail.com
+pwd:user666
 
 # Nuxt 3 Minimal Starter
 

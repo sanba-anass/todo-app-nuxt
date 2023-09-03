@@ -91,7 +91,12 @@ watch(completed, async (newValue) => {
 			<div class="flex">
 				<input class="checkbox" type="checkbox" v-model="completed" />
 				<span class="error-text">{{ completedError }}</span>
-				<div class="title" @input="updateTitle" contenteditable>
+				<div
+					:class="{ completed }"
+					class="title"
+					@input="updateTitle"
+					contenteditable
+				>
 					{{ title }}
 				</div>
 				<div class="error-text">{{ titleError }}</div>
@@ -103,7 +108,9 @@ watch(completed, async (newValue) => {
 			</div>
 		</div>
 		<div class="error-text" v-if="fail">fails deleting the todo</div>
-		<p @input="updateDescription" contenteditable>{{ description }}</p>
+		<p :class="{ completed }" @input="updateDescription" contenteditable>
+			{{ description }}
+		</p>
 		<div class="error-text">{{ descriptionError }}</div>
 	</div>
 </template>
@@ -121,8 +128,12 @@ watch(completed, async (newValue) => {
 	font-size: 1rem;
 }
 .title {
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 1.5rem;
+}
+.completed {
+	text-decoration: line-through;
+	opacity: 0.3;
 }
 .error-text {
 	color: rgb(221, 49, 49);

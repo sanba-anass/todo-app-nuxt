@@ -15,6 +15,8 @@
     "nuxt": "^3.7.0"
   },
   "dependencies": {
-    "@vueuse/nuxt": "^10.4.0"
+    "@vueuse/nuxt": "^10.4.0",
+    "cloudflare": "^2.9.1",
+    "yarn": "^1.22.19"
   }
 }

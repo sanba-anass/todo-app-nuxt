@@ -7,9 +7,6 @@ export default defineNuxtConfig({
 		"@nuxtjs/supabase",
 		// ...
 	],
-	nitro: {
-		preset: "netlify_edge",
-	},
 	supabase: {
 		redirect: false,
 	},

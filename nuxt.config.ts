@@ -8,10 +8,13 @@ export default defineNuxtConfig({
 		// ...
 	],
 	//@ts-ignore
-	nitro:{
-		preset: 'netlify_edge'
+	nitro: {
+		preset: "netlify_edge",
 	},
+
 	supabase: {
 		redirect: false,
+		url: process.env.SUPABASE_URL,
+		key: process.env.SUPABASE_KEY,
 	},
 });

@@ -7,6 +7,9 @@ export default defineNuxtConfig({
 		"@nuxtjs/supabase",
 		// ...
 	],
+	nitro:{
+		preset: 'node-server'
+	}
 	supabase: {
 		redirect: false,
 	},

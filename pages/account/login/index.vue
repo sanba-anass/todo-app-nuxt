@@ -37,10 +37,10 @@
 	</div>
 </template>
 <script setup lang="ts">
-definePageMeta({
-	middleware: ["auth"],
-	// or middleware: 'auth'
-});
+// definePageMeta({
+// 	middleware: ["auth"],
+// 	// or middleware: 'auth'
+// });
 const supabase = useSupabaseClient();
 const email = ref("");
 const password = ref("");

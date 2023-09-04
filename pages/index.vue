@@ -4,10 +4,10 @@
 	<TodoList />
 </template>
 <script setup>
-definePageMeta({
-	middleware: ["auth"],
-	// or middleware: 'auth'
-});
+// definePageMeta({
+// 	middleware: ["auth"],
+// 	// or middleware: 'auth'
+// });
 
 const supabase = useSupabaseClient();
 const router = useRouter();

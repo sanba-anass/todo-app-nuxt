@@ -5,7 +5,7 @@
 		</NuxtLayout>
 	</div>
 </template>
-<script setup></script>
+
 <style>
 html {
 	box-sizing: border-box;

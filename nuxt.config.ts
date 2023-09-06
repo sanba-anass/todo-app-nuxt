@@ -9,7 +9,7 @@ export default defineNuxtConfig({
 	],
 
 	nitro: {
-		preset: "cloudflare",
+		preset: "deno_deploy",
 	},
 	//@ts-ignore
 	supabase: {

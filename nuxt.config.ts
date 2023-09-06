@@ -9,7 +9,7 @@ export default defineNuxtConfig({
 	],
 
 	nitro: {
-		preset: "netlify_edge",
+		preset: "cloudflare",
 	},
 	//@ts-ignore
 	supabase: {

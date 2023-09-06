@@ -1,0 +1,8 @@
+name = "playground"
+main = "./.output/server/index.mjs"
+workers_dev = true
+compatibility_date = "2022-09-10"
+account_id = "2ba3b06c9bce84cf608175cdf53f58d5"
+
+[site]
+bucket = ".output/public"
